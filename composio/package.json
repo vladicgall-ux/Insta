@@ -1,0 +1,14 @@
+{
+  "name": "composio",
+  "version": "1.0.0",
+  "description": "Composio integration examples for the Insta project",
+  "type": "module",
+  "scripts": {
+    "connect": "node connect.mjs",
+    "call": "node call.mjs"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@composio/core": "^0.18.0"
+  }
+}
