@@ -21,7 +21,7 @@ export COMPOSIO_API_KEY=your_composio_project_api_key
 npm run connect
 ```
 
-Prints an authorization link. Open it, sign in to GitHub, and the script
+Prints an authorization link. Open it, sign in to Instagram, and the script
 waits for the connection to complete.
 
 ## Make a real tool call
@@ -30,8 +30,13 @@ waits for the connection to complete.
 npm run call
 ```
 
-Calls `INSTAGRAM_GET_IG_USER_MEDIA` for the connected user (reads recent
-media) and prints the response.
+Calls `INSTAGRAM_GET_IG_USER_MEDIA` with `ig_user_id: "me"` for the connected
+user (reads recent media) and prints the response.
+
+Note: manual tool execution requires pinning a toolkit version — see the
+`toolkitVersions` option passed to `new Composio(...)` in `call.mjs`. Check
+`composio.toolkits.get("instagram")` for the current `availableVersions` if
+calls start failing after a Composio update.
 
 ## Next steps
 
